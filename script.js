@@ -4,11 +4,9 @@
             if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
                 $(".nav").css({
                     "background-color":"#f8f8f8", 
-                    "height":"5%"
                 });
                 $('.menu').css({
-                    "background-color": "#f8f8f8",
-                    "height": "5%"
+                    "background-color": "#f8f8f8"
                 });
              // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
             } else {
