@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width" />
     <!-- add a font family -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>HTML wireframe</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     		<!-- Nav -->
-        <nav class="nav" role="navigation">
+        <nav class="nav" role="navigation" id="startchange">
             <a href="" class="logo"></a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
               <li><a href="#work">Projects</a></li>
-              <li><a href="#careers">Resume</a></li>
+              <li><a href="#aboutMe">Profile</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -26,30 +28,37 @@
       <header role="banner" >
           <h1>Marina's page</h1>
           <h3>Web developer, data geek & UI/UX enthusiast</h3>
-          <button><a href="#aboutMe">About me</a></button>
+          <!-- <button><a href="#aboutMe">About me</a></button> -->
+
+          <div class="page-scroll text-center">
+            <a href="#mainPart" class="btn btn-circle">
+              <i class="fa fa-angle-down fa-2x animated"></i>
+            </a>
+          </div>
       </header>
 
 
 
+
 		<!-- One -->
-			<section id="work" class="wrapper">
+			<section  class="wrapper" id="mainPart">
 				<div class="inner">
 					<article class="feature left">
             <span class="image"><img src="images/quiz_phone.jpg" alt="Quiz App Image" /></span>
 
-						<div class="content">
+						<div class="content" id="work">
 							<h2>Civics Quiz App</h2>
 							<p>An important part of the application process for becoming a US citizen is passing a civics test, covering important U.S.
               history and government topics. There are 100 civics questions on the naturalization test. 10 questions are chosen
               randomly and you must be able to answer at least 6 questions correctly.</p>
-              <button>Demo</button>
-              <button>Code</button>
+              <button><a href="https://marinaplopeanu.github.io/quiz_app/" target="_blank" >Demo</a></button>
+              <button><a href="https://github.com/marinaplopeanu/quiz_app" target="_blank">Code</a></button>
 						</div>
 					</article>
 					<article class="feature right">
             <span class="image"><img src="images/stick-man-lanscape.jpg" alt="Quiz App Image" /></span>
 
-            <div class="content">
+            <div class="content" id="aboutMe">
               <h2>About me</h2>
               <p>I’m a full stack web developer currently based in the Boston area. Coding is my art form. I enjoy creating functional
               and beautiful applications. I like learning, playing Witcher, and hiking.
@@ -61,45 +70,23 @@
       </section>
       
 
-      <section id="contact" class="wrapper special" >
-        <div class="info">
-            <h2>Get in touch</h2>
-            <p></p>
-          <form>
-            <div>
-              <div>
-                <input name="name" placeholder="Name" type="text" />
-              </div>
-              <div>
-                <input name="email" placeholder="Email" type="email" />
-              </div>
-              <div>
-                <textarea name="message" placeholder="Message" rows="4"></textarea>
-              </div>
-            </div>
-            <ul class="actions">
-              <button>Submit</button>
-            </ul>
-          </form>
-        </div>
-      </section>
-
     </main>
-    <footer role="content-info">
-      <div>
+    <footer role="content-info" class="info">
+      <div id="#contact">
+        <h2>Get in touch</h2>
         <ul class="icons">
-          <li><a href="#">
-              <span class="label">Email</span>
+          <li><a href="mailto:plopeanu.marina@gmail.com?subject=Link Here, Link There" target="_blank"">
+              <span class="label"><i class="fas fa-envelope"></i></span>
             </a>
           </li>
 
-          <li><a href="#" >
-              <span class="label">Github</span>
+          <li><a href="https://github.com/marinaplopeanu" target="_blank">
+              <span class="label"><i class="fab fa-github"></i></span>
             </a>
           </li>
 
-          <li><a href="#" >
-              <span class="label">LinkedIn</span>
+          <li><a href="https://www.linkedin.com/in/marina-plopeanu-59aa308b/" target="_blank" >
+              <span class="label"><i class="fab fa-linkedin"></i></span>
             </a>
           </li>
         </ul>
