@@ -3,7 +3,7 @@
         $(window).scroll(function () { // check if scroll event happened
             if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
                 $(".nav").css({
-                    "background-color":"#f8f8f8", 
+                    "background-color":"transparent", 
                 });
                 $('.menu').css({
                     "background-color": "#f8f8f8"
