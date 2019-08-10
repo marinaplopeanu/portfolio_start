@@ -165,13 +165,6 @@ nav a {
 }
 
 
-#banner .main-image{
-  width: 300px;
-}
-
-#banner .main-image img {
-  max-width: 100%;
-}
 
   /* down arrow from banner pulsates  */
 
@@ -226,6 +219,23 @@ nav a {
 
 /* small screens */
 
+
+.logo {
+  float: left;
+  padding: 5px 10px;
+  clear: none;
+  text-decoration: none;
+}
+
+.banner{
+  height: 100vh;
+  
+}
+
+.banner-text{
+/* padding-top: 30%; */
+padding: 30% 20%;
+}
 .tape-img{
   padding-top: 5%;
   width: 100px;
@@ -281,6 +291,12 @@ nav a {
   .nav li {
     float: left;
   }
+  .logo{
+    float: left;
+    padding: 20px 30px;
+    clear: none;
+    text-decoration: none;
+  }
   .nav li a {
     padding: 20px 30px;
   }
@@ -292,6 +308,17 @@ nav a {
   .nav .menu-icon {
     display: none;
   }
+
+
+
+    .banner {
+      height: 100%;
+    }
+
+    .banner-text {
+      padding-top: 10%;
+ 
+    }
 
   /* feature */
   .feature{
